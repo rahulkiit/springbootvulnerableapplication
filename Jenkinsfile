@@ -18,6 +18,7 @@ pipeline {
 
                     stage('Static Code Analysis') { 
                       steps {
+                      sh 'mvn compile'
                       sh 'mvn spotbugs:check'
                       }
                    }
