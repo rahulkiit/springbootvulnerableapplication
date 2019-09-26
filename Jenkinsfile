@@ -9,6 +9,7 @@ pipeline {
               }
            } 
         
+        parallel {
              stage('Dependency Check') { 
               steps {
               sh 'mvn dependency-check:check'
@@ -19,7 +20,14 @@ pipeline {
               steps {
               sh 'mvn spotbugs:check'
               }
-           } 
+           }
+        }
+        
+        stage('Build and Release') { 
+              steps {
+              echo "Push build artifact in repository"
+              }
+           }
       }
         
  }
