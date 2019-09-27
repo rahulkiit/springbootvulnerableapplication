@@ -8,7 +8,7 @@ import org.springframework.web.multipart.MultipartFile;
 @RestController
 public class HelloController {
 
-    @RequestMapping("/")
+    @GetMapping("/")
     public String index() {
         return "Greetings from Spring Boot!";
     }
