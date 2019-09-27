@@ -80,8 +80,8 @@
                     <effort>Max</effort>
                     <threshold>Low</threshold>
                     <failOnError>true</failOnError>
-                    <!--<includeFilterFile>${session.executionRootDirectory}/spotbugs-security-include.xml</includeFilterFile>
-                    <excludeFilterFile>${session.executionRootDirectory}/spotbugs-security-exclude.xml</excludeFilterFile>-->
+                    <includeFilterFile>${session.executionRootDirectory}/spotbugs-security-include.xml</includeFilterFile>
+                    <excludeFilterFile>${session.executionRootDirectory}/spotbugs-security-exclude.xml</excludeFilterFile>
                     <xmlOutput>true</xmlOutput>
                     <!-- Optional directory to put spotbugs xdoc xml report -->
                     <xmlOutputDirectory>target/site</xmlOutputDirectory>
